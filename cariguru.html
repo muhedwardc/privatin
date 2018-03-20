@@ -10,7 +10,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/cariguru.css">
 
     <title>Privatin | Your Private Teacher Solution</title>
 </head>
@@ -19,26 +20,150 @@
     <nav id="navigation">
         <ul class="nav-left">
             <li>
-                <a href="#">
+                <a href="index.html">
                     <img class="brand" src="src/img/brand-logo.png" alt="brand logo">
                 </a>
             </li>
             <li>
-                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="index.html">Home</a>
             </li>
             <li>
-                <a class="nav-link" href="#">Cari Guru</a>
+                <a class="nav-link active" href="cariguru.html">Cari Guru</a>
             </li>
         </ul>
         <ul class="nav-right">
             <li>
-                <a class="nav-link register-btn" href="#">Register</a>
+                <a class="nav-link register-btn" href="register.html">Register</a>
             </li>
             <li>
-                <a class="nav-link login-btn" href="#">Login</a>
+                <a class="nav-link login-btn" href="login.html">Login</a>
             </li>
         </ul>
     </nav>
+
+    <section class="head">
+        <div class="head-overlay">
+            <h1>Cari Guru</h1>
+            <h3>Cari guru sesuai dengan kebutuhanmu!</h3>
+            <div class="search-filter">
+                <div class="filter-item">
+                    <span class="filter-title">Jenjang</span>
+                    <select class="jenjang">
+                        <option value="sd" selected>SD</option>
+                        <option value="smp">SMP</option>
+                        <option value="sma">SMA</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <span class="filter-title">Mata Pelajaran</span>
+                    <select class="mata-pelajaran">
+                        <option value="matematika" selected>Matematika</option>
+                        <option value="ipa-sd">IPA SD</option>
+                        <option value="ips-sd">IPS SD</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <span class="filter-title">Hari</span>
+                    <select class="hari">
+                        <option value="sd" selected>Senin</option>
+                        <option value="smp">Selasa</option>
+                        <option value="sma">Rabu</option>
+                    </select>
+                </div>
+                <div class="filter-item last">
+                    <span class="filter-title">Jenjang</span>
+                    <select>
+                        <option value="sd" selected>SD</option>
+                        <option value="smp">SMP</option>
+                        <option value="sma">SMA</option>
+                    </select>
+                </div>
+                <div class="filter-btn">
+                    <button class="search-btn" type="submit">Cari</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="list-guru">
+        <div class="guru">
+            <img src="src/img/profile-pictures/1.jpeg" alt="foto profil guru">
+            <h5 class="nama">Nanda</h5>
+            <h5 class="jenjang grey">SD</h5>
+            <h5 class="mata-pelajaran grey">IPA</h5>
+            <ul class="list-hari">
+                <li class="hari">Senin</li>
+                <li class="hari">Selasa</li>
+            </ul>
+            <a class="detail-guru-btn" href="#">Detail</a>
+        </div>
+        <div class="guru">
+            <img src="src/img/profile-pictures/2.jpg" alt="foto profil guru">
+            <h5 class="nama">Nanda</h5>
+            <h5 class="jenjang grey">SD</h5>
+            <h5 class="mata-pelajaran grey">IPA</h5>
+            <ul class="list-hari">
+                <li class="hari">Senin</li>
+                <li class="hari">Selasa</li>
+            </ul>
+            <a class="detail-guru-btn" href="#">Detail</a>
+        </div>
+        <div class="guru">
+            <img src="src/img/profile-pictures/3.jpg" alt="foto profil guru">
+            <h5 class="nama">Nanda</h5>
+            <h5 class="jenjang grey">SD</h5>
+            <h5 class="mata-pelajaran grey">IPA</h5>
+            <ul class="list-hari">
+                <li class="hari">Senin</li>
+                <li class="hari">Selasa</li>
+            </ul>
+            <a class="detail-guru-btn" href="#">Detail</a>
+        </div>
+        <div class="guru">
+            <img src="src/img/profile-pictures/4.jpg" alt="foto profil guru">
+            <h5 class="nama">Nanda</h5>
+            <h5 class="jenjang grey">SD</h5>
+            <h5 class="mata-pelajaran grey">IPA</h5>
+            <ul class="list-hari">
+                <li class="hari">Senin</li>
+                <li class="hari">Selasa</li>
+            </ul>
+            <a class="detail-guru-btn" href="#">Detail</a>
+        </div>
+        <div class="guru">
+            <img src="src/img/profile-pictures/5.jpg" alt="foto profil guru">
+            <h5 class="nama">Nanda</h5>
+            <h5 class="jenjang grey">SD</h5>
+            <h5 class="mata-pelajaran grey">IPA</h5>
+            <ul class="list-hari">
+                <li class="hari">Senin</li>
+                <li class="hari">Selasa</li>
+            </ul>
+            <a class="detail-guru-btn" href="#">Detail</a>
+        </div>
+        <div class="guru">
+            <img src="src/img/profile-pictures/6.jpg" alt="foto profil guru">
+            <h5 class="nama">Nanda</h5>
+            <h5 class="jenjang grey">SD</h5>
+            <h5 class="mata-pelajaran grey">IPA</h5>
+            <ul class="list-hari">
+                <li class="hari">Senin</li>
+                <li class="hari">Selasa</li>
+            </ul>
+            <a class="detail-guru-btn" href="#">Detail</a>
+        </div>
+        <div class="guru">
+            <img src="src/img/profile-pictures/7.jpg" alt="foto profil guru">
+            <h5 class="nama">Nanda</h5>
+            <h5 class="jenjang grey">SD</h5>
+            <h5 class="mata-pelajaran grey">IPA</h5>
+            <ul class="list-hari">
+                <li class="hari">Senin</li>
+                <li class="hari">Selasa</li>
+            </ul>
+            <a class="detail-guru-btn" href="#">Detail</a>
+        </div>
+    </section>
 
     <footer>
         <span>Copyright &copy;2018 Privatin</span>
