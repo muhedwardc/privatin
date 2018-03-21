@@ -72,6 +72,62 @@
     cursor: pointer;
 }
 
+#harga {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 40px 0px 40px;
+}
+
+#harga .paket {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 60%;
+    color: rgb(107, 107, 107);
+    font-size: 1.3em;
+    margin-bottom: 40px;
+}
+
+.paket .paket-nav {
+    cursor: pointer;
+}
+
+#harga .paket .active {
+    color: #00A2E9;
+}
+
+#harga .list-harga {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    text-align: center;
+    width: 50%;
+}
+
+.harga-paket div {
+    padding: 5px 10px;
+}
+
+.harga-paket .sd {
+    border: 1px solid red;
+    color: red;
+}
+
+.harga-paket .smp {
+    border: 1px solid green;
+    color: green;
+}
+
+.harga-paket .sma {
+    border: 1px solid orange;
+    color: orange;
+}
+
+.harga-paket div h4 {
+    color: black;
+}
+
 #list-guru {
     padding: 50px;
     display: flex;
