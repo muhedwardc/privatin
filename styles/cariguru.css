@@ -200,3 +200,34 @@
     color: white;
     text-decoration: none;
 }
+
+#halaman {
+    display: flex;
+    justify-content: center;
+}
+
+#halaman ul {
+    list-style: none;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+#halaman ul li {
+    display: inline;
+    padding: 3px;
+    text-align: center;
+    color: rgb(92, 92, 92);
+    cursor: pointer;
+}
+
+#halaman ul li.active {
+    color: black;
+}
+
+.next {
+    font-weight: bold;
+}
+
+#halaman ul li:hover {
+    color: #00A2E9;
+}
