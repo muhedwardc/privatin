@@ -1,5 +1,8 @@
 #login {
-    background: url('img/feature.jpg');
+    background: url('img/login.jpg');
+    background-size: 120em;
+    background-position: -550px -200px;
+    background-repeat: none;
     height: 90vh;
     margin-top: 10vh;
 }
