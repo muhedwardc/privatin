@@ -1,0 +1,93 @@
+#riwayat {
+    height: 100vh;
+    margin-top: 10vh;
+    padding: 40px;
+    text-align: center;
+}
+
+#riwayat h2 {
+    margin-bottom: 40px;
+}
+
+.daftar-riwayat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.riwayat-item {
+    padding: 20px 0;
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+.riwayat-atas {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.foto-pengajar {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.bidang-pengajar {
+    display: flex;
+}
+
+.bidang-pengajar div {
+    padding: 0 20px;
+}
+
+.vertical-line {
+    border-right: 1px solid #000;
+    height: 70%;
+}
+
+.status-pemesanan {
+    width: 100px;
+    text-align: right;
+}
+
+.status-pemesanan span {
+    padding: 5px;
+}
+
+.menunggu {
+    color: rgb(255, 217, 0);
+    border: 1px solid rgb(255, 217, 0);
+}
+
+.sukses {
+    color: rgb(15, 180, 37);
+    border: 1px solid rgb(15, 180, 37);
+}
+
+.riwayat-bawah {
+    display: flex;
+    justify-content: center;
+}
+
+.riwayat-bawah h3 {
+    padding: 0 40px;
+    align-items: flex-end;
+}
+
+.daftar-jadwal {
+    display: flex;
+}
+
+.jadwal-hari {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
