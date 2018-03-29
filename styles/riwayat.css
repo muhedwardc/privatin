@@ -18,7 +18,7 @@
 
 .riwayat-item {
     padding: 20px 0;
-    width: 50%;
+    width: 60%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -29,6 +29,10 @@
     position: relative;
     display: flex;
     justify-content: space-around;
+}
+
+.material-icons {
+    font-size: 15px;
 }
 
 .foto-pengajar {
@@ -73,7 +77,8 @@
 
 .riwayat-bawah {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 150px;
 }
 
 .riwayat-bawah h3 {
