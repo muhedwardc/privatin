@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/detailguru.css">
+
+    <title>Privatin | Your Private Teacher Solution</title>
+</head>
+
+<body>
+    <nav id="navigation">
+        <ul class="nav-left">
+            <li>
+                <a href="index.html">
+                    <img class="brand" src="src/img/brand-logo.png" alt="brand logo">
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="nav-link active" href="cariguru.html">Cari Guru</a>
+            </li>
+            <li>
+                <a class="nav-link" href="riwayat.html">Riwayat</a>
+            </li>
+        </ul>
+        <ul class="nav-right">
+            <li>
+                <a class="nav-link register-btn" href="register.html">Register</a>
+            </li>
+            <li>
+                <a class="nav-link login-btn" href="login.html">Login</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="head">
+        <div class="head-overlay">
+            <h1>Cari Guru</h1>
+            <h3>Cari guru sesuai dengan kebutuhanmu!</h3>
+            <div class="search-filter">
+                <div class="filter-item">
+                    <span class="filter-title">Jenjang</span>
+                    <select class="jenjang">
+                        <option value="sd" selected>SD</option>
+                        <option value="smp">SMP</option>
+                        <option value="sma">SMA</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <span class="filter-title">Mata Pelajaran</span>
+                    <select class="mata-pelajaran">
+                        <option value="matematika" selected>Matematika</option>
+                        <option value="ipa-sd">IPA SD</option>
+                        <option value="ips-sd">IPS SD</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <span class="filter-title">Hari</span>
+                    <select class="hari">
+                        <option value="senin" selected>Senin</option>
+                        <option value="selasa">Selasa</option>
+                        <option value="rabu">Rabu</option>
+                        <option value="kamis">Kamis</option>
+                        <option value="jumat">Jumat</option>
+                        <option value="sabtu">Sabtu</option>
+                        <option value="minggu">Minggu</option>
+                    </select>
+                </div>
+                <div class="filter-item last">
+                    <span class="filter-title">Jenjang</span>
+                    <select>
+                        <option value="sd" selected>SD</option>
+                        <option value="smp">SMP</option>
+                        <option value="sma">SMA</option>
+                    </select>
+                </div>
+                <div class="filter-btn">
+                    <button class="search-btn" type="submit">Cari</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="detailguru">
+        <div class="detailguru-background"></div>
+        <div class="guru-fokus">
+            <div>
+                <img src="src/img/profile-pictures/1.jpeg" alt="foto profil">
+            </div>
+            <div class="profil">
+                <h3>Nanda</h3>
+                <span>Fakultas Teknik, Universitas Gadjah Mada</span>
+                <br/>
+                <i class="material-icons">location_on</i> <span>Bantul</span>
+            </div>
+            <div class="kategori">
+                <div>
+                    <h5>Jenjang</h5>
+                    <h3>SD</h3>
+                </div>
+                <div class="vertical-line">
+                    <div></div>
+                </div>
+                <div>
+                    <h5>Mata Pelajaran</h5>
+                    <h3>IPA</h3>
+                </div>
+            </div>
+            <div class="pilih-jadwal">
+                <h4>Pilih Jadwal</h4>
+                <div class="pilihan">
+                    <div>
+                        <h5>Hari</h5>
+                        <select name="hari" id="pilihan-hari">
+                            <option value="senin" selected>Senin</option>
+                            <option value="selasa">Selasa</option>
+                        </select>
+                    </div>
+                    <div>
+                        <h5>Jam</h5>
+                        <select name="jam" id="pilihan-jam">
+                            <option value="1">08.00 - 09.30</option>
+                            <option value="2">10.30 - 12.00</option>
+                            <option value="3">13.00 - 14.30</option>
+                            <option value="4">15.30 - 17.00</option>
+                            <option value="5">18.00 - 19.30</option>
+                        </select>
+                    </div>
+                    <div class="tambah">
+                        <button class="plus-btn">+</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="pesan-jadwal" data-toggle="modal" data-target="#summary">Pesan</button>
+            </div>
+            <div class="modal fade" id="summary" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div>
+                            <img src="src/img/profile-pictures/1.jpeg" alt="foto profil">
+                        </div>
+                        <div class="profil">
+                            <h3>Nanda</h3>
+                            <span>Fakultas Teknik, Universitas Gadjah Mada</span>
+                            <br/>
+                            <i class="material-icons">location_on</i> <span>Bantul</span>
+                        </div>
+                        <div class="kategori">
+                            <div>
+                                <h5>Jenjang</h5>
+                                <h3>SD</h3>
+                            </div>
+                            <div class="vertical-line">
+                                <div></div>
+                            </div>
+                            <div>
+                                <h5>Mata Pelajaran</h5>
+                                <h3>IPA</h3>
+                            </div>
+                        </div>
+                        <div class="konfirmasi">
+                            <h4>Sudah yakin dengan pilihan jadwalmu?</h4>
+                            <div class="info-summary">
+                                <div>
+                                    <h5>Hari</h5>
+                                    <ul class="summary-hari">
+                                        <li>Senin</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h5>Jam</h5>
+                                    <ul class="summary-jam">
+                                        <li>08.00 - 09.30</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="konfirmasi-btn">
+                            <a class="ya btn btn-success">Ya</a>
+                            <a class="tidak btn btn-danger">Tidak</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="guruserupa">
+        <h3>Guru yang serupa</h3>
+        <div class="listguru">
+            <div class="guru">
+                <img src="src/img/profile-pictures/2.jpg" alt="foto profil guru">
+                <h5 class="nama">Nanda</h5>
+                <h5 class="jenjang grey">SD</h5>
+                <h5 class="mata-pelajaran grey">IPA</h5>
+                <ul class="list-hari">
+                    <li class="hari">Senin</li>
+                    <li class="hari">Selasa</li>
+                </ul>
+                <a class="detail-guru-btn" href="#">Detail</a>
+            </div>
+            <div class="guru">
+                <img src="src/img/profile-pictures/3.jpg" alt="foto profil guru">
+                <h5 class="nama">Nanda</h5>
+                <h5 class="jenjang grey">SD</h5>
+                <h5 class="mata-pelajaran grey">IPA</h5>
+                <ul class="list-hari">
+                    <li class="hari">Senin</li>
+                    <li class="hari">Selasa</li>
+                </ul>
+                <a class="detail-guru-btn" href="#">Detail</a>
+            </div>
+            <div class="guru">
+                <img src="src/img/profile-pictures/4.jpg" alt="foto profil guru">
+                <h5 class="nama">Nanda</h5>
+                <h5 class="jenjang grey">SD</h5>
+                <h5 class="mata-pelajaran grey">IPA</h5>
+                <ul class="list-hari">
+                    <li class="hari">Senin</li>
+                    <li class="hari">Selasa</li>
+                </ul>
+                <a class="detail-guru-btn" href="#">Detail</a>
+            </div>
+        </div>
+        <div class="arrow">
+            <a class="left-arrow" href="#">&lt;</a>
+            <a class="right-arrow" href="#">&gt;</a>
+        </div>
+    </section>
+
+    <footer>
+        <span>Copyright &copy;2018 Privatin</span>
+        <div>
+            <a href="#">contact@privatin.com</a>
+            <span>081822833844</span>
+        </div>
+    </footer>
+</body>
+
+</html>
