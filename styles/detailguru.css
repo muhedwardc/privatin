@@ -66,14 +66,22 @@ section, footer {
 }
 
 .search-btn {
-    width: 90%;
+    text-align: center;
+    width: 90%; 
     padding: 3px 25px;
     color: white;
     border: 1px solid #00A2E9;
     border-radius: 5px;
     background-color: #00A2E9;
     outline: none;
-    cursor: pointer;
+    cursor: pointer; 
+}
+
+.search-btn:hover {
+    text-decoration: none;
+    color: white;
+    border: 1px solid #00A2E9;
+    background-color: #00A2E9;
 }
 
 .detailguru {
