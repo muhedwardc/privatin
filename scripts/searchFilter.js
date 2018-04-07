@@ -71,6 +71,18 @@ const mataPelajaranSma = [
     {
         value: "kimia",
         text: "Kimia"
+    },
+    {
+        value: "ekonomi",
+        text: "Ekonomi"
+    },
+    {
+        value: "sejarah",
+        text: "Sejarah"
+    },
+    {
+        value: "geografi",
+        text: "Geografi"
     }
 ]
 
