@@ -81,8 +81,8 @@
                     </select>
                 </div>
                 <div class="filter-item last">
-                    <span class="filter-title">Jenjang</span>
-                    <select>
+                    <span class="filter-title">Lokasi</span>
+                    <select class="lokasi">
                         <option value="sleman" selected>Sleman</option>
                         <option value="bantul">Bantul</option>
                         <option value="gk">Gunung Kidul</option>
@@ -91,7 +91,7 @@
                     </select>
                 </div>
                 <div class="filter-btn">
-                        <a class="search-btn" href="hasilpencarian.html">Cari</a>
+                    <a class="search-btn" href="hasilpencarian.html">Cari</a>
                 </div>
             </div>
         </div>
@@ -107,7 +107,8 @@
                 <h3>Nanda</h3>
                 <span>Fakultas Teknik, Universitas Gadjah Mada</span>
                 <br/>
-                <i class="material-icons">location_on</i> <span>Bantul</span>
+                <i class="material-icons">location_on</i>
+                <span>Bantul</span>
             </div>
             <div class="kategori">
                 <div>
@@ -143,12 +144,16 @@
                         </select>
                     </div>
                     <div class="tambah">
-                        <button class="plus-btn">+</button>
+                        <button class="plus-btn" onclick="tambahJadwal()">+</button>
                     </div>
+                </div>
+                <div class="list-jadwal-terpilih">
+                    <ul class="jadwal-terpilih" onclick="ulClicked()">
+                    </ul>
                 </div>
             </div>
             <div>
-                <button class="pesan-jadwal" data-toggle="modal" data-target="#summary">Pesan</button>
+                <button class="pesan-jadwal" onclick='rangkumanJadwal()'>Pesan</button>
             </div>
             <div class="modal fade" id="summary" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
@@ -160,7 +165,8 @@
                             <h3>Nanda</h3>
                             <span>Fakultas Teknik, Universitas Gadjah Mada</span>
                             <br/>
-                            <i class="material-icons">location_on</i> <span>Bantul</span>
+                            <i class="material-icons">location_on</i>
+                            <span>Bantul</span>
                         </div>
                         <div class="kategori">
                             <div>
@@ -181,13 +187,11 @@
                                 <div>
                                     <h5>Hari</h5>
                                     <ul class="summary-hari">
-                                        <li>Senin</li>
                                     </ul>
                                 </div>
                                 <div>
                                     <h5>Jam</h5>
                                     <ul class="summary-jam">
-                                        <li>08.00 - 09.30</li>
                                     </ul>
                                 </div>
                             </div>
@@ -202,48 +206,72 @@
         </div>
     </section>
 
-    <section id="guruserupa">
+    <div id="guruserupa" class="container">
         <h3>Guru yang serupa</h3>
-        <div class="listguru">
-            <div class="guru">
-                <img src="src/img/profile-pictures/2.jpg" alt="foto profil guru">
-                <h5 class="nama">Nanda</h5>
-                <h5 class="jenjang grey">SD</h5>
-                <h5 class="mata-pelajaran grey">IPA</h5>
-                <ul class="list-hari">
-                    <li class="hari">Senin</li>
-                    <li class="hari">Selasa</li>
-                </ul>
-                <a class="detail-guru-btn" href="#">Detail</a>
-            </div>
-            <div class="guru">
-                <img src="src/img/profile-pictures/3.jpg" alt="foto profil guru">
-                <h5 class="nama">Nanda</h5>
-                <h5 class="jenjang grey">SD</h5>
-                <h5 class="mata-pelajaran grey">IPA</h5>
-                <ul class="list-hari">
-                    <li class="hari">Senin</li>
-                    <li class="hari">Selasa</li>
-                </ul>
-                <a class="detail-guru-btn" href="#">Detail</a>
-            </div>
-            <div class="guru">
-                <img src="src/img/profile-pictures/4.jpg" alt="foto profil guru">
-                <h5 class="nama">Nanda</h5>
-                <h5 class="jenjang grey">SD</h5>
-                <h5 class="mata-pelajaran grey">IPA</h5>
-                <ul class="list-hari">
-                    <li class="hari">Senin</li>
-                    <li class="hari">Selasa</li>
-                </ul>
-                <a class="detail-guru-btn" href="#">Detail</a>
+        <div class="row">
+            <div class="MultiCarousel" data-items="1,3,3,3" data-slide="1" id="MultiCarousel" data-interval="1000">
+                <div class="MultiCarousel-inner">
+                    <div class="item active">
+                        <div class="guru">
+                            <img src="src/img/profile-pictures/2.jpg" alt="foto profil guru">
+                            <h5 class="nama">Nanda</h5>
+                            <h5 class="jenjang grey">SD</h5>
+                            <h5 class="mata-pelajaran grey">IPA</h5>
+                            <ul class="list-hari">
+                                <li class="hari">Senin</li>
+                                <li class="hari">Selasa</li>
+                            </ul>
+                            <a class="detail-guru-btn" href="#">Detail</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="guru">
+                            <img src="src/img/profile-pictures/2.jpg" alt="foto profil guru">
+                            <h5 class="nama">Nanda</h5>
+                            <h5 class="jenjang grey">SD</h5>
+                            <h5 class="mata-pelajaran grey">IPA</h5>
+                            <ul class="list-hari">
+                                <li class="hari">Senin</li>
+                                <li class="hari">Selasa</li>
+                            </ul>
+                            <a class="detail-guru-btn" href="#">Detail</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="guru">
+                            <img src="src/img/profile-pictures/2.jpg" alt="foto profil guru">
+                            <h5 class="nama">Nanda</h5>
+                            <h5 class="jenjang grey">SD</h5>
+                            <h5 class="mata-pelajaran grey">IPA</h5>
+                            <ul class="list-hari">
+                                <li class="hari">Senin</li>
+                                <li class="hari">Selasa</li>
+                            </ul>
+                            <a class="detail-guru-btn" href="#">Detail</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="guru">
+                            <img src="src/img/profile-pictures/2.jpg" alt="foto profil guru">
+                            <h5 class="nama">Nanda</h5>
+                            <h5 class="jenjang grey">SD</h5>
+                            <h5 class="mata-pelajaran grey">IPA</h5>
+                            <ul class="list-hari">
+                                <li class="hari">Senin</li>
+                                <li class="hari">Selasa</li>
+                            </ul>
+                            <a class="detail-guru-btn" href="#">Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary leftLst"><i class="left"></i></button></button>
+                <button class="btn btn-primary rightLst"><i class="right"></i></button>
             </div>
         </div>
-        <div class="arrow">
-            <a class="left-arrow" href="#">&lt;</a>
-            <a class="right-arrow" href="#">&gt;</a>
-        </div>
-    </section>
+    </div>
+
+    <script src="scripts/detailguru.js"></script>
+    <script src="scripts/multipleitemscarousel.js"></script>
 
     <footer>
         <span>Copyright &copy;2018 Privatin</span>

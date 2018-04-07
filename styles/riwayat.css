@@ -156,3 +156,16 @@
 .konfirmasi-pembayaran-btn:focus {
     outline: none;
 }
+
+.pengecekan-pembayaran {
+    background-color: green;
+    text-align: left;
+    color: white;
+    font-size: .8em;
+    padding: 5px 10px;
+    margin-top: 20px;
+}
+
+.modal-footer .btn {
+    width: 100px;
+}

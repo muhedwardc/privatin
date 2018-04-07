@@ -51,15 +51,15 @@
             <div class="search-filter">
                 <div class="filter-item">
                     <span class="filter-title">Jenjang</span>
-                    <select class="jenjang">
-                        <option value="sd" selected>SD</option>
-                        <option value="smp">SMP</option>
-                        <option value="sma">SMA</option>
+                    <select id="jenjang" onchange="getValue()">
+                        <option class="pilihan-jenjang" value="sd" selected>SD</option>
+                        <option class="pilihan-jenjang" value="smp">SMP</option>
+                        <option class="pilihan-jenjang" value="sma">SMA</option>
                     </select>
                 </div>
                 <div class="filter-item">
                     <span class="filter-title">Mata Pelajaran</span>
-                    <select class="mata-pelajaran">
+                    <select id="mata-pelajaran">
                         <option value="matematika" selected>Matematika</option>
                         <option value="ipa-sd">IPA SD</option>
                         <option value="ips-sd">IPS SD</option>
@@ -67,19 +67,19 @@
                 </div>
                 <div class="filter-item">
                     <span class="filter-title">Hari</span>
-                    <select class="hari">
-                            <option value="senin">Senin</option>
-                            <option value="selasa">Selasa</option>
-                            <option value="rabu">Rabu</option>
-                            <option value="kamis">Kamis</option>
-                            <option value="jumat">Jumat</option>
-                            <option value="sabtu">Sabtu</option>
-                            <option value="minggu">Minggu</option>
+                    <select id="hari">
+                        <option value="senin">Senin</option>
+                        <option value="selasa">Selasa</option>
+                        <option value="rabu">Rabu</option>
+                        <option value="kamis">Kamis</option>
+                        <option value="jumat">Jumat</option>
+                        <option value="sabtu">Sabtu</option>
+                        <option value="minggu">Minggu</option>
                     </select>
                 </div>
                 <div class="filter-item last">
                     <span class="filter-title">Lokasi</span>
-                    <select>
+                    <select id="lokasi">
                         <option value="sleman" selected>Sleman</option>
                         <option value="bantul">Bantul</option>
                         <option value="gk">Gunung Kidul</option>
@@ -96,9 +96,9 @@
 
     <section id="harga">
         <ul class="paket">
-            <li class="nama-paket active" onclick="hargaPaket(1)"><span class="paket-nav">Paket Individu</span></li>
-            <li class="nama-paket" onclick="hargaPaket(2)"><span class="paket-nav">Paket 2 orang</span></li>
-            <li class="nama-paket" onclick="hargaPaket(3)"><span class="paket-nav">Paket 3 orang</span></li>
+            <li class="nama-paket active"><span class="paket-nav" paket="0">Paket Individu</span></li>
+            <li class="nama-paket"><span class="paket-nav" paket="1">Paket 2 orang</span></li>
+            <li class="nama-paket"><span class="paket-nav" paket="2">Paket 3 orang</span></li>
         </ul>
         <ul class="list-harga">
             <li class="harga-paket">
@@ -110,13 +110,13 @@
             <li class="harga-paket">
                 <div class="smp">
                     <h4>SMP</h4>
-                    <p>Rp.<span class="harga-sd">50.000</span>,- / jam</p>
+                    <p>Rp.<span class="harga-smp">60.000</span>,- / jam</p>
                 </div>
             </li>
             <li class="harga-paket">
                 <div class="sma">
                     <h4>SMA</h4>
-                    <p>Rp.<span class="harga-sd">50.000</span>,- / jam</p>
+                    <p>Rp.<span class="harga-sma">70.000</span>,- / jam</p>
                 </div>
             </li>
         </ul>
@@ -220,6 +220,9 @@
             <li class="next">&raquo;</li>
         </ul>
     </div>
+
+    <script src="scripts/hargaPaket.js"></script>
+    <script src="scripts/searchFilter.js"></script>
 
     <footer>
         <span>Copyright &copy;2018 Privatin</span>

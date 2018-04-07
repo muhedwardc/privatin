@@ -1,4 +1,5 @@
-section, footer {
+section,
+footer {
     width: 100vw;
 }
 
@@ -42,7 +43,7 @@ section, footer {
     border-right: 1px solid #ccc;
 }
 
-.filter-item.last{
+.filter-item.last {
     border-right: none;
 }
 
@@ -67,14 +68,14 @@ section, footer {
 
 .search-btn {
     text-align: center;
-    width: 90%; 
+    width: 90%;
     padding: 3px 25px;
     color: white;
     border: 1px solid #00A2E9;
     border-radius: 5px;
     background-color: #00A2E9;
     outline: none;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .search-btn:hover {
@@ -90,7 +91,7 @@ section, footer {
 
 .detailguru-background {
     height: 450px;
-    background-image:url("img/edu.png");
+    background-image: url("img/edu.png");
     background-size: cover;
     background-position: center;
     background-repeat: none;
@@ -201,7 +202,7 @@ section, footer {
     color: white;
 }
 
-.tambah button:focus{
+.tambah button:focus {
     outline: none;
 }
 
@@ -221,7 +222,7 @@ section, footer {
 }
 
 #guruserupa {
-    margin: 50px 0;
+    margin: 50px auto;
     text-align: center;
     position: relative;
 }
@@ -232,11 +233,11 @@ section, footer {
 }
 
 .guru {
-    width: 250px;
     box-sizing: border-box;
     border: transparent;
     text-align: center;
-    margin: 1rem 1em;
+    background-color: #fff;
+    margin: 0 20px;
     box-shadow: 1px 1px 1px 1px #ccc;
     padding: 10px 10px 20px 10px;
 }
@@ -336,6 +337,11 @@ section, footer {
     padding: none;
 }
 
+.info-summary div ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
 .info-summary div h5 {
     font-weight: bold;
 }
@@ -345,4 +351,120 @@ section, footer {
     margin: 0 5px;
     color: white;
     text-decoration: none;
+}
+
+.jadwal-terpilih {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.item-tambah {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    text-align: right;
+}
+
+.hari-terpilih {
+    width: 40%;
+    text-align: left;
+}
+
+.jam-terpilih {
+    width: 50%;
+}
+
+.item-tambah:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.hapus-btn {
+    background-color: transparent;
+    color: red;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    text-align: right;
+}
+
+.hapus-btn:focus {
+    outline: none;
+}
+
+.hapus-btn:hover {
+    color: rgb(253, 47, 47);
+}
+
+/* multiple items carousel */
+
+.MultiCarousel {
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.MultiCarousel .MultiCarousel-inner {
+    transition: 1s ease all;
+    float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item {
+    float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item>div {
+    text-align: center;
+    margin: 10px;
+    color: #666;
+}
+
+.MultiCarousel .leftLst,
+.MultiCarousel .rightLst {
+    position: absolute;
+    border-radius: 50%;
+    top: calc(50% - 20px);
+    border: none;
+}
+
+.MultiCarousel .leftLst {
+    left: 0;
+}
+
+.MultiCarousel .rightLst {
+    right: 0;
+}
+
+i {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.MultiCarousel .leftLst.over,
+.MultiCarousel .rightLst.over {
+    pointer-events: none;
+    background: #ccc;
 }
