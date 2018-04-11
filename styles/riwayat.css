@@ -1,5 +1,4 @@
 #riwayat {
-    height: 100vh;
     margin-top: 10vh;
     padding: 40px;
     text-align: center;
@@ -7,6 +6,16 @@
 
 #riwayat h2 {
     margin-bottom: 40px;
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+.row div {
+    padding: 0;
+    margin: 0;
 }
 
 .daftar-riwayat {
@@ -53,16 +62,17 @@
 
 .vertical-line {
     border-right: 1px solid #000;
-    height: 70%;
 }
 
 .status-pemesanan {
-    width: 100px;
+    position: relative;
     text-align: right;
 }
 
 .status-pemesanan span {
     padding: 5px;
+    position: absolute;
+    right: 20px;
 }
 
 .menunggu {
@@ -168,4 +178,15 @@
 
 .modal-footer .btn {
     width: 100px;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+html footer {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
 }
