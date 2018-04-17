@@ -145,24 +145,46 @@ footer {
     font-size: 15px;
 }
 
+#pilihan-paket {
+    width: auto;
+    margin-bottom: 20px;
+}
+
 .pilih-jadwal {
     margin-bottom: 20px;
+    width: 90%;
+}
+
+.pilihan-fix {
+    display: flex;
+    justify-content: center;
+}
+
+.pilihan-fix div {
+    padding: 10px;
+}
+
+.pilihan-jadwal-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.select-jadwal {
+    padding: 0; 
+    margin-right: 20px;
+    height: auto;
 }
 
 .pilih-jadwal h4 {
-    margin-bottom: 20px;
-    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.pilih-jadwal h5 {
+    text-align: center;
 }
 
 .pilih-jadwal .pilihan {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-right: -50px;
-}
-
-.pilih-jadwal .pilihan div {
-    margin: 0 10px;
+    padding: 0 10%;
 }
 
 .pilih-jadwal .pilihan div select {
@@ -171,16 +193,29 @@ footer {
 
 .pilih-jadwal .pilihan .tambah {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: flex-end;
     margin: 0;
+    font-size: .8em;
 }
 
-.plus-btn {
+#pilihan-hari {
+    padding: 0;
+}
+
+.jadwal {
+    padding-right: 0;
+}
+
+.jadwal h4 {
+    padding-right: 0;
+}
+
+.plus-icon {
     border: none;
     background: white;
     display: inline-block;
-    padding: 8px 16px;
+    padding: 4px 10px;
     overflow: hidden;
     text-decoration: none;
     color: #00A2E9;
@@ -206,6 +241,19 @@ footer {
     outline: none;
 }
 
+.plus-btn {
+    background: #00A2E9;
+    border: 1px solid #00A2E9;
+    padding: 5px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.plus-btn:focus {
+    outline: none;
+}
+
 .pesan-jadwal {
     padding: 10px 25px;
     color: white;
@@ -219,6 +267,10 @@ footer {
 .pesan-jadwal:hover {
     color: white;
     text-decoration: none;
+}
+
+.pesan-jadwal:focus {
+    outline: none;
 }
 
 #guruserupa {
@@ -322,14 +374,22 @@ footer {
 
 .info-summary {
     margin-top: 10px;
+}
+
+.fixed-parameter {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 10px 0;
 }
 
-.info-summary div {
-    padding: 0 20px;
-    margin-top: 10px;
+.fixed-parameter div {
+    margin: 0 20px;
+}
+
+.fixed-jadwal {
+    display: block;
+    margin-top: 20px;
 }
 
 .info-summary div ul {
@@ -337,13 +397,8 @@ footer {
     padding: none;
 }
 
-.info-summary div ul li {
-    display: flex;
-    justify-content: space-between;
-}
-
-.info-summary div h5 {
-    font-weight: bold;
+.info-summary h5 {
+    font-weight: 600;
 }
 
 .konfirmasi-btn a.btn {
@@ -353,30 +408,34 @@ footer {
     text-decoration: none;
 }
 
+.list-jadwal-terpilih {
+    margin-top: 10px;
+    width: 100%;
+    padding: 0 10%;
+    justify-content: center;
+}
+
+.list-jadwal-item {
+    width: 100%;
+    padding-left: 50px;
+    text-align: left;
+}
+
 .jadwal-terpilih {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     width: 100%;
 }
 
 .item-tambah {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 5px 10px;
     text-align: right;
-}
-
-.hari-terpilih {
-    width: 40%;
-    text-align: left;
-}
-
-.jam-terpilih {
-    width: 50%;
-}
-
-.item-tambah:hover {
-    background-color: rgb(245, 245, 245);
 }
 
 .hapus-btn {
@@ -384,8 +443,8 @@ footer {
     color: red;
     border: none;
     cursor: pointer;
-    width: 10%;
-    text-align: right;
+    padding: 0 10px;
+    text-align: center;
 }
 
 .hapus-btn:focus {
@@ -393,7 +452,13 @@ footer {
 }
 
 .hapus-btn:hover {
-    color: rgb(253, 47, 47);
+    background-color: rgb(253, 47, 47);
+    border-radius: 5px;
+    color: white;
+}
+
+a.tidak:hover {
+    color: white;
 }
 
 /* multiple items carousel */

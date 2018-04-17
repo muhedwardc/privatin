@@ -123,28 +123,39 @@
                     <h3>IPA</h3>
                 </div>
             </div>
-            <div class="pilih-jadwal">
-                <h4>Pilih Jadwal</h4>
+            <div class="pilih-jadwal">  
                 <div class="pilihan">
-                    <div>
-                        <h5>Hari</h5>
-                        <select name="hari" id="pilihan-hari">
-                            <option value="senin" selected>Senin</option>
-                            <option value="selasa">Selasa</option>
-                        </select>
+                    <div class="pilihan-fix">
+                        <div>
+                            <h4>Pilih Paket</h4>
+                            <select name="paket" id="pilihan-paket" class="select-paket">
+                                <option value="1">Paket 1 Orang</option>
+                                <option value="2">Paket 2 Orang</option>
+                                <option value="3">Paket 3 Orang</option>
+                            </select>
+                        </div>
+                        <div>
+                            <h4>Jumlah Pertemuan</h4>
+                            <select name="jumlah-pertemuan" id="jumlah-pertemuan" class="select-pertemuan">
+                                <option value="1">1 Minggu</option>
+                                <option value="2">2 Minggu</option>
+                                <option value="3">3 Minggu</option>
+                                <option value="4">4 Minggu</option>
+                            </select>
+                        </div>
                     </div>
-                    <div>
-                        <h5>Jam</h5>
-                        <select name="jam" id="pilihan-jam">
-                            <option value="1">08.00 - 09.30</option>
-                            <option value="2">10.30 - 12.00</option>
-                            <option value="3">13.00 - 14.30</option>
-                            <option value="4">15.30 - 17.00</option>
-                            <option value="5">18.00 - 19.30</option>
-                        </select>
-                    </div>
-                    <div class="tambah">
-                        <button class="plus-btn" onclick="tambahJadwal()">+</button>
+                    <div class="jadwal">
+                        <h4>Pilih Jadwal</h4>
+                        <div class="pilihan-jadwal-box">
+                            <select name="hari" id="pilihan-jadwal" class="select-jadwal">
+                                <option value="1">Senin 08.00 - 09.30</option>
+                                <option value="2">Selasa 10.30 - 12.00</option>
+                                <option value="3">Rabu 13.00 - 14.30</option>
+                            </select>
+                            <div class="tambah">
+                                <button class="plus-btn" onclick="tambahJadwal()">Tambah</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="list-jadwal-terpilih">
@@ -153,7 +164,7 @@
                 </div>
             </div>
             <div>
-                <button class="pesan-jadwal" onclick='rangkumanJadwal()'>Pesan</button>
+                <button class="pesan-jadwal" onclick='checkout()'>Pesan</button>
             </div>
             <div class="modal fade" id="summary" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
@@ -184,15 +195,19 @@
                         <div class="konfirmasi">
                             <h4>Sudah yakin dengan pilihan jadwalmu?</h4>
                             <div class="info-summary">
-                                <div>
-                                    <h5>Hari</h5>
-                                    <ul class="summary-hari">
-                                    </ul>
+                                <div class="fixed-parameter">
+                                    <div>
+                                        <h5>Pilihan Paket</h5>
+                                        <span class="paket-terpilih"></span>
+                                    </div>
+                                    <div>
+                                        <h5>Jumlah Pertemuan</h5>
+                                        <span class="pertemuan-terpilih"></span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h5>Jam</h5>
-                                    <ul class="summary-jam">
-                                    </ul>
+                                <div class="fixed-jadwal">
+                                    <h5>Jadwal Terpilih</h5>
+                                    <ul class="summary-jadwal"></ul>
                                 </div>
                             </div>
                         </div>
