@@ -141,8 +141,12 @@ footer {
     border: .5px solid #000;
 }
 
-.material-icons {
-    font-size: 15px;
+i.material-icons {
+    border: none;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    margin-right: 5px;
 }
 
 #pilihan-paket {
@@ -244,10 +248,17 @@ footer {
 .plus-btn {
     background: #00A2E9;
     border: 1px solid #00A2E9;
-    padding: 5px 20px;
+    padding: 5px 5px;
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1.2em;
+    letter-spacing: .5px;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 1px 1px 1px #eee;
 }
 
 .plus-btn:focus {
