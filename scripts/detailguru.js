@@ -7,7 +7,12 @@ const pilihanPaket = document.getElementById('pilihan-paket'),
       spanPaketTerpilih = document.querySelector('.paket-terpilih'),
       spanPertemuanTerpilih = document.querySelector('.pertemuan-terpilih');
 
+let   formPaket = document.querySelector('.form-paket'),
+      formJmlPertemuan = document.querySelector('.form-jmlpertemuan'),
+      formJadwal = document.querySelector('.form-jadwal');
+
 let arrJadwalTerpilih = [];
+let jadwalText;
 let paketValue = {
     sd: [50000, 60000, 70000],
     smp: [70000, 80000, 90000],
@@ -28,8 +33,7 @@ tambahJadwal = () => {
     }
 
     if (!ada) {
-        arrJadwalTerpilih.push(jadwal);
-        console.log(arrJadwalTerpilih);
+        arrJadwalTerpilih.push(jadwal); 
         updateView();
     } else if (ada && arrJadwalTerpilih.length != 0){
         alert ('Kowe wis milih kuwi lee');
@@ -62,23 +66,30 @@ updateView = () => {
 }
 
 checkout = () => {
-
     rangkumanJadwal.innerHTML = '';
     if (arrJadwalTerpilih.length === 0) {
         alert('durung di isi leeee, kowe milih jadwal opo?');
         pesanJadwalBtn.setAttribute('data-toggle', '');
         pesanJadwalBtn.setAttribute('data-target', '');
     } else {
-        spanPaketTerpilih.textContent = pilihanPaket.options[pilihanPaket.selectedIndex].text;
-        spanPertemuanTerpilih.textContent = jumlahPertemuan.options[jumlahPertemuan.selectedIndex].text;
+        jadwalText = "";
+        spanPaketTerpilih.innerText = pilihanPaket.options[pilihanPaket.selectedIndex].text;
+        spanPertemuanTerpilih.innerText = jumlahPertemuan.options[jumlahPertemuan.selectedIndex].text;
+        
+        formPaket.value = spanPaketTerpilih.innerText;
+        formJmlPertemuan.value = spanPertemuanTerpilih.innerText;
 
         pesanJadwalBtn.setAttribute('data-toggle', 'modal');
         pesanJadwalBtn.setAttribute('data-target', '#summary');
         for (let i = 0; i < arrJadwalTerpilih.length; i++) {
             let listJadwal = document.createElement('li');
+            let jadwalItem = arrJadwalTerpilih[i] + ', ';
+            i === (arrJadwalTerpilih.length - 1) ? jadwalItem = arrJadwalTerpilih[i] : null;
             let jadwalTerpilih = arrJadwalTerpilih[i];
             listJadwal.innerHTML = jadwalTerpilih;
             rangkumanJadwal.appendChild(listJadwal);
+            jadwalText += jadwalItem;
         }
+        formJadwal.value = jadwalText;
     }
 }
