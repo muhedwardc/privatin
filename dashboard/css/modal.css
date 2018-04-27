@@ -1,0 +1,96 @@
+.modal-content {
+    padding: 20px 40px;
+}
+
+.modal-content > div > img {
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover; 
+    object-position: center; 
+    border-radius: 50%; 
+    margin-bottom: 20px;
+}
+
+.modal-content > div > p, .pilihan-jadwal > p {
+    font-weight: 600; 
+    margin-bottom: 10px; 
+    font-size: 18px;
+}
+
+.pilihan-jadwal {
+    width: 150px;
+    max-width: 150px;
+}
+
+.pilihan-jadwal > select {
+    width: 90%;
+}
+
+.tambah-btn {
+    font-size: .8em;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.tambah-btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-simpan {
+    margin-top: 20px;
+}
+
+#jadwalTerpilih {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#jadwalTerpilihList {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+.item-tambah {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.list-jadwal-item {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+}
+
+.list-jadwal-item > div {
+    display: inline-block;
+}
+
+.hari {
+    width: 33%;
+}
+
+.jam {
+    width: 50%;
+}
+
+.hapus-btn {
+    background-color: transparent;
+    color: red;
+    border: none;
+    cursor: pointer;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.hapus-btn:focus {
+    outline: none;
+}
+
+.hapus-btn:hover {
+    background-color: rgb(253, 47, 47);
+    border-radius: 5px;
+    color: white;
+}
