@@ -62,8 +62,8 @@ hiddenFunction = () => {
     hiddenInput.value = "";
     let input = "";
     
-    for (let i= 0; i < jadwal.length; i ++) {
-        input += jadwal[i] + ',';
+    for (let i = 0; i < jadwal.length; i ++) {
+        i === 0 ? input += jadwal[i] : input += ',' + jadwal[i];
     }
     
     hiddenInput.value = input;
