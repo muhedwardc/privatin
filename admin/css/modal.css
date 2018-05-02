@@ -2,13 +2,43 @@
     padding: 20px 40px;
 }
 
-.modal-content > div > img {
+.image-container {
+    position: relative;
     width: 100px; 
-    height: 100px; 
-    object-fit: cover; 
-    object-position: center; 
-    border-radius: 50%;
+    height: 100px;
     margin-bottom: 20px;
+    margin: 0 auto;
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.image-container label {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    background:#00A2E9;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: table;
+    color: #fff;
+    z-index: 1;
+    box-shadow: 1px 1px 1px 1px rgb(155, 155, 155);
+}
+
+.image-container input {
+    display: none;
 }
 
 .modal-content > div > form {
