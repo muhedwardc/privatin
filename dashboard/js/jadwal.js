@@ -35,7 +35,7 @@ tambahBtn.addEventListener("click", function() {
 
 ulClicked = () => {
     if (event.target.tagName === 'BUTTON') {
-        let urutan = Number(event.path[1].attributes[1].value);
+        let urutan = Number(event.target.getAttribute("urutan"));
         jadwal.splice(urutan, 1);
         updateView();
     }
@@ -43,7 +43,7 @@ ulClicked = () => {
 
 updateView = () => {
     hiddenFunction()
-    jadwalTerpilih.innerHTML = null;
+    jadwalTerpilih.innerHTML = "";
     for (let i = 0; i < jadwal.length; i ++) {
         let splitJadwal = jadwal[i].split("+");
         let html = '<div class="list-jadwal-item">' 
