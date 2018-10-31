@@ -25,7 +25,7 @@
 }
 
 .login-box {
-    width: 400px;
+    width: 350px;
     background-color: white;
     padding: 40px 20px;
     text-align: center;
@@ -88,4 +88,19 @@ form a:hover {
     display: flex;
     flex-direction: column;
     text-align: left;
+}
+
+@media only screen and (max-width: 480px) {
+    #login,
+    .overlay {
+        background: white;
+    }
+
+    .overlay {
+        align-items: flex-start; 
+    }
+
+    #login > img {
+        display: none;
+    }
 }
