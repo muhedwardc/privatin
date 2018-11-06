@@ -17,32 +17,45 @@
 </head>
 
 <body>
-    <nav id="navigation">
-        <ul class="nav-left">
-            <li>
-                <a href="index.html">
-                    <img class="brand" src="src/img/brand-logo.png" alt="brand logo">
-                </a>
-            </li>
-            <li>
+    <nav class="navbar">
+        <div id="hamburger" class="mobile-show">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <a class="nav-brand" href="index.html">
+                <img src="src/img/brand-logo.png" alt="brand logo">
+            </a>
+            <div class="mobile-hide">
                 <a class="nav-link active" href="index.html">Home</a>
-            </li>
-            <li>
                 <a class="nav-link" href="cariguru.html">Cari Guru</a>
-            </li>
-            <li>
                 <a class="nav-link" href="riwayat.html">Riwayat</a>
-            </li>
-        </ul>
-        <ul class="nav-right">
-            <li>
-                <a class="nav-link register-btn" href="register.html">Register</a>
-            </li>
-            <li>
-                <a class="nav-link login-btn" href="login.html">Login</a>
-            </li>
-        </ul>
+            </div>
+        </div>
+        <div class="mobile-hide auth">
+            <a class="btn secondary-btn" href="register.html">Register</a>
+            <a class="btn primary-btn" href="login.html">Login</a>
+        </div>
     </nav>
+    
+    <div class="mobile-nav">
+        <div>
+            <p>Hi<br><span class="color-primary">Nanda</span><span>!</span></p>
+            <div class="close"></div>
+        </div>
+        <div>
+            <a href="index.hmtl"><img src="src/img/navbar/home.svg" alt="">Home</a>
+            <a href="cariguru.html"><img src="src/img/navbar/home.svg" alt="">Cari Guru</a>
+            <a href="riwayat.html"><img src="src/img/navbar/home.svg" alt="">Riwayat</a>
+            <a href="login.html"><img src="src/img/navbar/home.svg" alt="">Login</a>
+            <a href="register.html"><img src="src/img/navbar/home.svg" alt="">Register</a>
+        </div>
+        <div>
+            <a href="#"><img src="src/img/navbar/home.svg" alt="">Keluar</a>
+        </div>
+    </div>
+    <div class="backdrop"></div>
 
     <section id="carousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -54,8 +67,7 @@
                 <img class="d-block w-100" src="src/img/carousel/1.jpg" alt="First slide">
                 <div class="carousel-caption">
                     <p>
-                        Diskon <br>
-                        Rp. 15.000/jam setiap 5 hari untuk pemesanan akumulasi 20 jam
+                        Diskon Rp. 15.000/jam setiap 5 hari untuk pemesanan akumulasi 20 jam
                     </p>
                 </div>
             </div>
@@ -63,8 +75,7 @@
                 <img class="d-block w-100" src="src/img/carousel/2.jpg" alt="Second slide">
                 <div class="carousel-caption">
                     <p>
-                        Diskon <br>
-                        Rp. 15.000/jam setiap 5 hari untuk pemesanan akumulasi 20 jam
+                        Diskon Rp. 15.000/jam setiap 5 hari untuk pemesanan akumulasi 20 jam
                     </p>
                 </div>
             </div>
@@ -75,7 +86,7 @@
 
     <section id="about">
         <div class="content">
-            <img src="src/img/logo-light.png" alt="privatin">
+            <img src="src/img/logo-dark.png" alt="privatin">
             <p class="description">
                 Platform website yang akan membantu siswa untuk menemukan guru les privat yang berasal dari mahasiswa
             </p>
@@ -84,7 +95,7 @@
 
     <section id="feature">
         <div class="overlay">
-            <h1>Apa yang bisa kamu lakukan?</h1>
+            <h1>Bagaimana cara memesan?</h1>
             <div class="feature-items">
                 <div class="feature-two">
                     <div class="feature-card">
@@ -143,6 +154,8 @@
             <span>081822833844</span>
         </div>
     </footer>
+
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
