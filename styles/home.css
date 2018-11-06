@@ -4,8 +4,8 @@
 }
 
 .carousel-indicators li {
-    width: 13px;
-    height: 13px;
+    width: 12px;
+    height: 12px;
     border: 1px solid white;
     border-radius: 50%;
     cursor: pointer;
@@ -39,12 +39,12 @@
 }
 
 #about {
-    background-color: rgb(39, 39, 39);
+    background-color: white;
     display: flex;
     justify-content: center;
     text-align: center;
     padding: 50px 0 50px 0;
-    color: white;
+    color: #212921;
     font-size: 1.6em;
     font-weight: 400;
 }
@@ -69,7 +69,7 @@
 
 .overlay {
     width: 100%;
-    background-color: rgba(13, 101, 184, 0.561);
+    background-color: rgba(0, 0, 0, .7);
     padding: 50px 0 20px 0;
     text-align: center;
     display: flex;
@@ -177,4 +177,132 @@
 
 .left-brand img {
     height: 40px;
+}
+
+@media only screen and (max-width: 480px) {
+    p {
+        font-size: 14px; 
+    }
+
+    .carousel-item {
+        height: 160px;
+        margin-top: 49px;
+    }
+
+    .carousel-indicators {
+        bottom: 2px;
+    }
+
+    .carousel-indicators li,
+    .carousel-indicators li.active {
+        width: 8px;
+        height: 8px;
+    }
+
+    .carousel-caption {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .carousel-caption p {
+        position: absolute;
+        width: 160px;
+        padding: 8px;
+        top: 12px;
+        right: 12px;
+        background-color: rgba(0, 0, 0, .8);
+        font-size: 16px;
+    }
+
+    #about {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        color: #212921;
+        font-size: 1.6em;
+        font-weight: 400;
+    }
+    
+    #about .content {
+        width: 100%;
+        padding: 18px;
+    }
+    
+    #about .content img {
+        width: 128px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .feature-items,
+    .feature-two,
+    .feature-card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .feature-two {
+        padding-bottom: 0;
+    }
+
+    .feature-card {
+        align-items: center;
+        margin-bottom: 28px;
+    }
+
+    .feature-card > .description {
+        padding: 0;
+        text-align: center;
+        width: 300px;
+    }
+
+    .feature-img {
+        width: 62px;
+        height: auto;
+        margin-bottom: 12px;
+    }
+
+    #feature h1 {
+        font-size: 20px;
+        padding-bottom: 27px;
+    }
+    
+    #feature h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+        font-weight: 400;
+    }
+
+    .left-brand,
+    .person img {
+        display: none;
+    }
+
+    #shortcut {
+        height: 160px;
+    }
+
+    #shortcut h3 {
+        font-size: 18px;
+    }
+
+    #shortcut .description {
+        padding: 0;
+    }
+
+    #shortcut .description .items a {
+        width: 210px;
+        padding: 8px;
+        text-align: center;
+        margin-top: 15px;
+        font-size: 14px;
+    }
 }

@@ -213,6 +213,10 @@ a:focus {
     display: block;
 }
 
+.mobile-show {
+    display: none !important;
+}
+
 /* FOOTER */
 footer {
     padding: 10px 40px;
@@ -231,6 +235,10 @@ footer a:hover {
 @media only screen and (max-width: 480px) {
     .mobile-hide {
         display: none !important;
+    }
+
+    .mobile-show {
+        display: block !important;
     }
 
     .navbar {
